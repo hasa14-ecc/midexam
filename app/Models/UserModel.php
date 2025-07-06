@@ -1,0 +1,19 @@
+<?php
+// UserModel.php
+namespace App\Models;
+use CodeIgniter\Model;
+
+class UserModel extends Model {
+  protected $table = 'users';
+  protected $allowedFields = ['username', 'password', 'role'];
+  protected $useTimestamps = false;
+}
+
+// QuestionModel.php
+namespace App\Models;
+use CodeIgniter\Model;
+
+class QuestionModel extends Model {
+  protected $table = 'questions';
+  protected $allowedFields = ['level', 'question', 'is_ancaman'];
+}
